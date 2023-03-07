@@ -36,13 +36,13 @@ public class Registry {
         this.room = room;
     }
 
-    public String toString(){
+    public String toString() {
         return "Busy Rooms"
-                +getRoom()+
+                + getRoom() +
                 ": "
-                +getName()+
+                + getName() +
                 ", "
-                +getEmail();
+                + getEmail();
 
     }
 }
