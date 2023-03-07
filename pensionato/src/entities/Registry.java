@@ -37,7 +37,7 @@ public class Registry {
     }
 
     public String toString() {
-        return "Busy Rooms"
+        return "Busy Rooms "
                 + getRoom() +
                 ": "
                 + getName() +

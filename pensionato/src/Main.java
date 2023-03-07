@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Quantas pensoes serao registradas: ");
+        System.out.println("How many people are being registred today: ");
         int n = sc.nextInt();
         int total = 9;
         Registry[] registries = new Registry[total];
@@ -24,9 +24,10 @@ public class Main {
 
         }
 
-        for (int j = 0; j < total; j++) {
-            if (registries[j] != null) {
-                System.out.println(registries[j]);
+        //---------- For each ----------
+       for (Registry reg : registries) {
+            if ( reg != null) {
+                System.out.println(reg);
             }
         }
     }
