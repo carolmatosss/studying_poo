@@ -29,13 +29,12 @@ public class Info {
         media = total / n;
         System.out.printf("Media: %.2f", media);
 
-        for (int j = 0; j < n; j++) {
+        for (Height vect : array) {
 
             System.out.println("Pessoas com menos de 16 anos: ");
-            if (array[j].getAge() < 16) {
+            if (vect.getAge() < 16) {
                 soma++;
-                System.out.println(array[j].getName());
-
+                System.out.println(vect.getName());
             }
 
         }
